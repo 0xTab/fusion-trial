@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# MIMO - Web3.0 Social Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application featuring a responsive landing page for the MIMO Web3.0 Social Platform with download options for multiple platforms.
 
-## Available Scripts
+## 🚀 Features
+
+- **Responsive Design**: Fully responsive layout that works on all device sizes
+- **Modern React**: Built with React 19 and functional components
+- **React Router**: Single-page application with routing
+- **Modular CSS**: Component-based styling with CSS custom properties
+- **Platform Downloads**: Download buttons for iOS, Android, and Google Play
+- **Device Mockups**: Interactive device previews showcasing the platform
+- **Animated Elements**: Smooth animations and transitions
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   └── Home/
+│       ├── Header.js          # Navigation header with logo
+│       ├── HeroSection.js     # Main hero section with CTA
+│       ├── PlatformButtons.js # Platform download buttons
+│       ├── DevicePreview.js   # Device mockups and previews
+│       └── Footer.js          # Footer with social links
+├── pages/
+│   └── Home.js               # Main home page component
+├── styles/
+│   ├── base.css              # Global styles and CSS variables
+│   ├── Home.css              # Main layout and background effects
+│   └── components/           # Component-specific styles
+│       ├── Header.css
+│       ├── HeroSection.css
+│       ├── PlatformButtons.css
+│       ├── DevicePreview.css
+│       └── Footer.css
+├── App.js                    # Main app with routing
+└── index.js                  # React entry point
+```
+
+## 🎨 Design System
+
+The project uses a modular CSS approach with:
+
+- **CSS Custom Properties**: Centralized color palette, spacing, and typography
+- **Component-based Styles**: Each component has its own CSS file
+- **Responsive Design**: Mobile-first approach with breakpoints
+- **Animation Library**: Keyframe animations for enhanced UX
+
+### Color Palette
+- Primary Background: `#000` (Black)
+- Primary Text: `#fff` (White)
+- Secondary Text: `#5E616E` (Gray)
+- Accent Colors: Teal/Green gradients
+
+### Typography
+- Primary Font: `Outfit` (Google Fonts)
+- Secondary Font: `Inter` (Google Fonts)
+
+## 🛠️ Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `/` - Redirects to `/home`
+- `/home` - Main landing page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📱 Responsive Breakpoints
 
-### `npm run eject`
+- Mobile: `480px` and below
+- Tablet: `768px` and below
+- Desktop: `1024px` and above
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Key Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Header
+- Logo display
+- Back to home navigation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Hero Section
+- Main title and subtitle
+- Primary CTA button
+- Animated entrance effects
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Platform Buttons
+- iOS/iPad download
+- TestFlight access
+- Android APK
+- Google Play Store
 
-## Learn More
+### Device Preview
+- Laptop mockup with app interface
+- Mobile device preview
+- Responsive positioning
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Footer
+- MIMO logo
+- Copyright information
+- Social media links (Twitter, Instagram, Facebook, Discord, Medium)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Technologies Used
 
-### Code Splitting
+- **React** 19.1.1
+- **React Router Dom** 6.x
+- **CSS3** with custom properties
+- **Google Fonts** (Outfit, Inter)
+- **SVG Icons** for scalable graphics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Development Notes
 
-### Analyzing the Bundle Size
+The project follows React best practices:
+- Functional components with hooks
+- Component composition
+- Separated concerns (styling, logic, presentation)
+- Responsive design patterns
+- Accessibility considerations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Getting Started
 
-### Making a Progressive Web App
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The page will reload when you make changes, and you'll see any lint errors in the console.
