@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/components/PlatformButtons.css';
 
 const PlatformButtons = () => {
   const AppleIcon = () => (
