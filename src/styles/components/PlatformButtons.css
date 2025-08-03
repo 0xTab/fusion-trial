@@ -1,0 +1,96 @@
+/* Platform Buttons */
+.platform-buttons {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.platform-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.8s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.platform-button:hover {
+  transform: translateY(-5px);
+}
+
+.platform-button:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.platform-button:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.platform-button:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.button-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(45, 175, 152, 0.51) 0%, rgba(200, 200, 200, 0.00) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.button-icon.google-play {
+  background: none;
+}
+
+.button-label {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Responsive Design for Platform Buttons */
+@media (max-width: 768px) {
+  .buttons-container {
+    gap: 1.5rem;
+  }
+  
+  .button-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .button-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .button-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .platform-buttons {
+    padding: 2rem 1rem;
+  }
+}
