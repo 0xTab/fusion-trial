@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/components/DevicePreview.css';
 
 const DevicePreview = () => {
   return (
