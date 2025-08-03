@@ -1,0 +1,97 @@
+/* Hero Section */
+.hero-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.title-container {
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #5E616E;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #5AEFA7 4.74%, rgba(217, 217, 217, 0.50) 96.75%);
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.70);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8);
+}
+
+.download-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+  }
+  
+  .download-btn {
+    font-size: 18px;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+  
+  .download-btn {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+}
