@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Home/Header';
-import HeroSection from '../components/Home/HeroSection';
-import PlatformButtons from '../components/Home/PlatformButtons';
-import DevicePreview from '../components/Home/DevicePreview';
-import Footer from '../components/Home/Footer';
+import Header from '../components/download/Header';
+import HeroSection from '../components/download/HeroSection';
+import PlatformButtons from '../components/download/PlatformButtons';
+import DevicePreview from '../components/download/DevicePreview';
+import Footer from '../components/download/Footer';
 import '../styles/Home.css';
 
 const Download = () => {

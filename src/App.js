@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/download" element={<Download />} />
+          {/* <Route path="/download" element={<Download />} /> */}
         </Routes>
       </div>
     </Router>
