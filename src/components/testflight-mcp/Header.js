@@ -1,5 +1,5 @@
 import React from 'react';
-import { COLORS, TYPOGRAPHY, SPACING } from '../../constants/designTokens';
+import { SPACING } from '../../constants/designTokens';
 import SocialIcons from './SocialIcons';
 import LanguageSelector from './LanguageSelector';
 import Navigation from './Navigation';
