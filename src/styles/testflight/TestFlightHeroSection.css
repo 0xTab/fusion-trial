@@ -1,0 +1,259 @@
+.testflight-hero {
+  background: #000;
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.hero-background-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.background-blur {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(336px);
+  opacity: 0.25;
+}
+
+.blur-1 {
+  width: 637px;
+  height: 637px;
+  background: #B0FF06;
+  top: 20%;
+  left: -10%;
+}
+
+.blur-2 {
+  width: 637px;
+  height: 637px;
+  background: #B0FF06;
+  bottom: 10%;
+  right: -5%;
+}
+
+.blur-3 {
+  width: 523px;
+  height: 523px;
+  background: #42FF49;
+  top: 10%;
+  right: 10%;
+  filter: blur(240px);
+}
+
+.decorative-star {
+  position: absolute;
+  background: #43FFBB;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-1 {
+  width: 25px;
+  height: 25px;
+  top: 30%;
+  left: 15%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.star-2 {
+  width: 20px;
+  height: 20px;
+  top: 60%;
+  right: 20%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  color: #FFF;
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1.4px;
+  margin-bottom: 20px;
+}
+
+.hero-notice {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin-bottom: 40px;
+}
+
+.feature-highlight {
+  border: 4px solid #42EBAE;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  background: rgba(66, 235, 174, 0.05);
+}
+
+.highlight-text {
+  color: #42EBAE;
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
+.highlight-emphasis {
+  font-weight: 700;
+}
+
+.installation-steps {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-content {
+  text-align: left;
+}
+
+.step-text {
+  color: #FFF;
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-bottom: 20px;
+}
+
+.testflight-link {
+  color: #42EBAE;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.testflight-link:hover {
+  color: #43FFBB;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 56px;
+  }
+  
+  .hero-notice {
+    font-size: 28px;
+  }
+  
+  .highlight-text {
+    font-size: 32px;
+  }
+  
+  .step-text {
+    font-size: 28px;
+  }
+  
+  .feature-highlight {
+    padding: 16px 32px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .testflight-hero {
+    padding: 60px 0;
+    min-height: 50vh;
+  }
+  
+  .hero-title {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+  
+  .hero-notice {
+    font-size: 22px;
+  }
+  
+  .highlight-text {
+    font-size: 24px;
+  }
+  
+  .step-text {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .step-content {
+    text-align: center;
+  }
+  
+  .feature-highlight {
+    padding: 12px 24px;
+    margin-bottom: 40px;
+  }
+  
+  .background-blur {
+    filter: blur(200px);
+  }
+  
+  .star-1, .star-2 {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testflight-hero {
+    padding: 40px 0;
+  }
+  
+  .hero-container {
+    padding: 0 16px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .hero-notice {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .highlight-text {
+    font-size: 20px;
+  }
+  
+  .step-text {
+    font-size: 18px;
+  }
+  
+  .feature-highlight {
+    padding: 10px 20px;
+    border-width: 2px;
+  }
+}
