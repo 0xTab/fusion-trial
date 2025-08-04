@@ -4,7 +4,7 @@ import { TRANSITIONS } from '../../constants/designTokens';
 import '../../styles/components/Footer.css';
 
 const Footer = () => {
-  const { isMobile } = useResponsive();
+  // useResponsive hook available if needed
 
   const socialLinks = [
     {

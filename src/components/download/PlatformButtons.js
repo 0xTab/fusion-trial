@@ -5,7 +5,7 @@ import { GRADIENTS, TRANSITIONS } from '../../constants/designTokens';
 import '../../styles/components/PlatformButtons.css';
 
 const PlatformButtons = () => {
-  const { isMobile } = useResponsive();
+  // useResponsive hook available if needed
 
   const platformData = [
     {
