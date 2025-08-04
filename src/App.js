@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
+import TestMCP from './pages/testmcp';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/testflight" element={<TestFlight />} />
+          <Route path="/testmcp" element={<TestMCP />} />
           {/* <Route path="/download" element={<Download />} /> */}
         </Routes>
       </div>

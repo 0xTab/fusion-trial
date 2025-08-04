@@ -1,0 +1,212 @@
+/* TestMCP Page Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.testmcp-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.testmcp-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Styles */
+.testmcp-header {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testmcp-header {
+    padding: 20px !important;
+  }
+  
+  .navigation {
+    display: none !important;
+  }
+  
+  .header-right {
+    gap: 15px !important;
+  }
+  
+  .hero-section {
+    padding: 60px 20px !important;
+  }
+  
+  .hero-section h1 {
+    font-size: 30px !important;
+  }
+  
+  .hero-section h2 {
+    font-size: 40px !important;
+  }
+  
+  .hero-section p {
+    font-size: 18px !important;
+  }
+  
+  .device-preview {
+    padding: 40px 20px !important;
+    gap: 40px !important;
+  }
+  
+  .device-frame {
+    width: 250px !important;
+    height: 500px !important;
+  }
+  
+  .contact-section {
+    padding: 40px 20px !important;
+  }
+  
+  .contact-section form {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .contact-section input {
+    min-width: 100% !important;
+  }
+  
+  .footer {
+    padding: 40px 20px !important;
+  }
+  
+  .footer > div {
+    flex-direction: column !important;
+    gap: 20px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 24px !important;
+  }
+  
+  .hero-section h2 {
+    font-size: 32px !important;
+  }
+  
+  .hero-section p {
+    font-size: 16px !important;
+  }
+  
+  .device-frame {
+    width: 200px !important;
+    height: 400px !important;
+  }
+}
+
+/* Hover Effects */
+.nav-item:hover {
+  opacity: 1 !important;
+}
+
+.social-icon:hover {
+  transform: scale(1.1) !important;
+}
+
+.download-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 16px rgba(66, 235, 174, 0.3) !important;
+}
+
+/* Focus States */
+.nav-item:focus,
+.social-icon:focus,
+.download-button:focus {
+  outline: 2px solid #43FFBB;
+  outline-offset: 2px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .testmcp-header,
+  .background-elements,
+  .footer {
+    display: none !important;
+  }
+  
+  .testmcp-page {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Performance Optimizations */
+.background-elements {
+  will-change: transform;
+}
+
+.looper-container {
+  will-change: transform;
+}
+
+/* Fix for iOS Safari */
+.testmcp-page {
+  -webkit-overflow-scrolling: touch;
+} 
