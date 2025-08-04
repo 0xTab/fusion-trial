@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/AppShowcase.css';
+import '../../styles/AppShowcase.css';
 
 const AppShowcase = () => {
   const apps = [
