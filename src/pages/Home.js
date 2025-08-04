@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../components/common/Header';
-import HeroSection from '../components/HeroSection';
-import FeaturesSection from '../components/FeaturesSection';
-import AppShowcase from '../components/AppShowcase';
-import Footer from '../components/Footer';
+import HeroSection from '../components/home/HeroSection';
+import FeaturesSection from '../components/home/FeaturesSection';
+import AppShowcase from '../components/home/AppShowcase';
+import Footer from '../components/home/Footer';
 import '../styles/Home.css';
 
 const Home = () => {
