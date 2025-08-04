@@ -200,6 +200,7 @@
 
 .hero-content {
   max-width: 900px;
+  position: relative;
 }
 
 .hero-title {
@@ -229,19 +230,20 @@
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.7px;
   line-height: 1.2;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .hero-description {
   font-size: 20px;
   color: white;
   opacity: 0.8;
-  margin: 30px 0 50px;
+  margin: 0 0 50px 0;
   line-height: 1.5;
+  max-width: 731px;
 }
 
 .qr-section {
-  margin-top: 30px;
+  margin: 30px 0 50px 0;
 }
 
 .qr-section svg {
@@ -250,12 +252,112 @@
 
 .hero-image {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .app-mockup {
   width: 170px;
   height: 303px;
   object-fit: contain;
+}
+
+/* Download info styling */
+.download-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.qr-download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.qr-code-box {
+  width: 140px;
+  height: 173px;
+  background: linear-gradient(180deg, #3F6D59 0.82%, #1E5764 100%);
+  border-radius: 10px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code-content {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 33px;
+}
+
+.qr-pattern {
+  width: 100%;
+  height: 100%;
+}
+
+.qr-center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-circle {
+  width: 31px;
+  height: 31px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-circle img {
+  width: 20px;
+  height: 21px;
+}
+
+.download-text {
+  color: white;
+  font-family: 'PingFang SC', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hash-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+  color: white;
+}
+
+.hash-label {
+  color: #486DF0;
+}
+
+.hash-value {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Platform Buttons */
