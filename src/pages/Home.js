@@ -85,7 +85,7 @@ const Home = () => {
           </div>
 
           <div className="hero-image">
-            <img src="/api/placeholder/170/303" alt="MIMO App" className="app-mockup" />
+            <img src="https://via.placeholder.com/170x303/43FFBB/000000?text=MIMO+APP" alt="MIMO App" className="app-mockup" />
           </div>
         </div>
 
