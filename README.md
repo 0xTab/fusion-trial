@@ -1,135 +1,162 @@
 # MIMO - Web3.0 Social Platform
 
-A React application featuring a responsive landing page for the MIMO Web3.0 Social Platform with download options for multiple platforms.
+A modern React application showcasing the MIMO Web3.0 social platform with clean, maintainable code following best practices.
 
 ## 🚀 Features
 
-- **Responsive Design**: Fully responsive layout that works on all device sizes
-- **Modern React**: Built with React 19 and functional components
-- **React Router**: Single-page application with routing
-- **Modular CSS**: Component-based styling with CSS custom properties
-- **Platform Downloads**: Download buttons for iOS, Android, and Google Play
-- **Device Mockups**: Interactive device previews showcasing the platform
-- **Animated Elements**: Smooth animations and transitions
+- **Responsive Design**: Mobile-first approach with custom responsive hooks
+- **Clean Architecture**: Well-structured components following React best practices
+- **Design System**: Centralized design tokens for consistency
+- **Accessibility**: Proper ARIA attributes and keyboard navigation
+- **Performance**: Optimized components with proper memoization
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── components/
+│   ├── common/
+│   │   └── SvgIcons.js          # Reusable SVG icon components
 │   └── Home/
-│       ├── Header.js          # Navigation header with logo
-│       ├── HeroSection.js     # Main hero section with CTA
-│       ├── PlatformButtons.js # Platform download buttons
-│       ├── DevicePreview.js   # Device mockups and previews
-│       └── Footer.js          # Footer with social links
+│       ├── Header.js            # Navigation header
+│       ├── HeroSection.js       # Main hero section
+│       ├── PlatformButtons.js   # Download platform buttons
+│       ├── DevicePreview.js     # Device mockups
+│       └── Footer.js            # Footer with social links
+├── constants/
+│   └── designTokens.js          # Centralized design tokens
+├── hooks/
+│   └── useResponsive.js         # Custom responsive hook
 ├── pages/
-│   └── Home.js               # Main home page component
-├── styles/
-│   ├── base.css              # Global styles and CSS variables
-│   ├── Home.css              # Main layout and background effects
-│   └── components/           # Component-specific styles
-│       ├── Header.css
-│       ├── HeroSection.css
-│       ├── PlatformButtons.css
-│       ├── DevicePreview.css
-│       └── Footer.css
-├── App.js                    # Main app with routing
-└── index.js                  # React entry point
+│   └── Home.js                  # Main home page
+└── styles/
+    ├── base.css                 # Base styles and utilities
+    └── components/              # Component-specific styles
 ```
 
 ## 🎨 Design System
 
-The project uses a modular CSS approach with:
-
-- **CSS Custom Properties**: Centralized color palette, spacing, and typography
-- **Component-based Styles**: Each component has its own CSS file
-- **Responsive Design**: Mobile-first approach with breakpoints
-- **Animation Library**: Keyframe animations for enhanced UX
-
-### Color Palette
-- Primary Background: `#000` (Black)
-- Primary Text: `#fff` (White)
-- Secondary Text: `#5E616E` (Gray)
-- Accent Colors: Teal/Green gradients
+### Colors
+- **Primary**: Black (#000) background, White (#fff) text
+- **Secondary**: Gray (#5E616E) for secondary text
+- **Gradients**: Green gradient for buttons and logos
+- **Social**: Brand colors for social media icons
 
 ### Typography
-- Primary Font: `Outfit` (Google Fonts)
-- Secondary Font: `Inter` (Google Fonts)
+- **Primary Font**: Outfit (400, 700)
+- **Secondary Font**: Inter (400)
 
-## 🛠️ Available Scripts
+### Spacing
+- **XS**: 0.5rem
+- **SM**: 1rem
+- **MD**: 1.5rem
+- **LG**: 2rem
+- **XL**: 2.5rem
+- **XXL**: 4rem
 
-In the project directory, you can run:
+## 🔧 Code Quality Improvements
 
-### `npm start`
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. Constants Over Magic Numbers
+- Created `designTokens.js` to centralize all design values
+- Replaced hard-coded colors, spacing, and animations with named constants
+- Single source of truth for all design tokens
 
-### `npm test`
-Launches the test runner in interactive watch mode.
+### 2. Meaningful Names
+- Descriptive component and function names
+- Clear variable names that explain their purpose
+- Self-documenting code structure
 
-### `npm run build`
-Builds the app for production to the `build` folder.
+### 3. Single Responsibility
+- Each component has a single, focused purpose
+- Extracted reusable logic into custom hooks
+- Separated concerns between presentation and logic
 
-## 🌐 Routes
+### 4. DRY (Don't Repeat Yourself)
+- Created reusable SVG icon components
+- Extracted common styling patterns
+- Shared logic through custom hooks
 
-- `/` - Redirects to `/home`
-- `/home` - Main landing page
+### 5. Clean Structure
+- Logical file organization
+- Consistent naming conventions
+- Proper separation of concerns
 
-## 📱 Responsive Breakpoints
+## 🎯 React Best Practices
 
-- Mobile: `480px` and below
-- Tablet: `768px` and below
-- Desktop: `1024px` and above
-
-## 🎯 Key Components
-
-### Header
-- Logo display
-- Back to home navigation
-
-### Hero Section
-- Main title and subtitle
-- Primary CTA button
-- Animated entrance effects
-
-### Platform Buttons
-- iOS/iPad download
-- TestFlight access
-- Android APK
-- Google Play Store
-
-### Device Preview
-- Laptop mockup with app interface
-- Mobile device preview
-- Responsive positioning
-
-### Footer
-- MIMO logo
-- Copyright information
-- Social media links (Twitter, Instagram, Facebook, Discord, Medium)
-
-## 🔧 Technologies Used
-
-- **React** 19.1.1
-- **React Router Dom** 6.x
-- **CSS3** with custom properties
-- **Google Fonts** (Outfit, Inter)
-- **SVG Icons** for scalable graphics
-
-## 📝 Development Notes
-
-The project follows React best practices:
+### Component Structure
 - Functional components with hooks
-- Component composition
-- Separated concerns (styling, logic, presentation)
-- Responsive design patterns
-- Accessibility considerations
+- Proper prop types and default values
+- Clean component composition
+
+### Performance
+- Custom `useResponsive` hook for responsive design
+- Proper event handling and cleanup
+- Optimized re-renders
+
+### Accessibility
+- Semantic HTML elements
+- Proper ARIA attributes
+- Keyboard navigation support
+- Focus management
+
+### Error Handling
+- Image error handling in DevicePreview
+- Graceful fallbacks for missing data
+- Console logging for debugging
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes, and you'll see any lint errors in the console.
+2. **Start Development Server**
+   ```bash
+   npm start
+   ```
+
+3. **Build for Production**
+   ```bash
+   npm run build
+   ```
+
+## 📱 Responsive Design
+
+The application uses a custom `useResponsive` hook that provides:
+- `isMobile`: Screen width < 480px
+- `isTablet`: Screen width 480px - 768px
+- `isDesktop`: Screen width > 768px
+
+## 🎨 Customization
+
+### Adding New Design Tokens
+1. Add new constants to `src/constants/designTokens.js`
+2. Import and use in components
+3. Update documentation
+
+### Adding New Components
+1. Create component in appropriate directory
+2. Follow naming conventions
+3. Add proper documentation
+4. Include accessibility features
+
+## 🔍 Code Quality Features
+
+- **Type Safety**: Proper prop validation
+- **Error Boundaries**: Graceful error handling
+- **Performance**: Optimized rendering
+- **Accessibility**: WCAG compliant
+- **Maintainability**: Clean, readable code
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+1. Follow the established code structure
+2. Use meaningful commit messages
+3. Test on multiple devices
+4. Ensure accessibility compliance
+5. Update documentation as needed

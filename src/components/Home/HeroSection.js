@@ -1,23 +1,76 @@
 import React from 'react';
+import { DownloadIcon } from '../common/SvgIcons';
+import { useResponsive } from '../../hooks/useResponsive';
+import { COLORS, GRADIENTS, SHADOWS, TRANSITIONS, ANIMATIONS } from '../../constants/designTokens';
 import '../../styles/components/HeroSection.css';
 
 const HeroSection = () => {
+  const { isMobile, isTablet } = useResponsive();
+
+  const handleDownloadClick = () => {
+    // Download logic would go here
+    console.log('Download button clicked');
+  };
+
+  const getTitleSize = () => {
+    if (isMobile) return '20px';
+    if (isTablet) return '24px';
+    return '30px';
+  };
+
+  const getSubtitleSize = () => {
+    if (isMobile) return '16px';
+    if (isTablet) return '20px';
+    return '25px';
+  };
+
+  const getButtonSize = () => {
+    if (isMobile) return '16px';
+    if (isTablet) return '18px';
+    return '20px';
+  };
+
+  const renderTitle = () => (
+    <div className="title-container">
+      <h1 
+        className="main-title"
+        style={{ fontSize: getTitleSize() }}
+      >
+        MIMO - Web3.0 Social Platform
+      </h1>
+      <p 
+        className="subtitle"
+        style={{ fontSize: getSubtitleSize() }}
+      >
+        Creating a world without borders
+      </p>
+    </div>
+  );
+
+  const renderDownloadButton = () => (
+    <button 
+      className="download-btn"
+      onClick={handleDownloadClick}
+      style={{ 
+        fontSize: getButtonSize(),
+        background: GRADIENTS.BUTTON,
+        boxShadow: SHADOWS.BUTTON,
+        transition: TRANSITIONS.FAST,
+      }}
+    >
+      <DownloadIcon className="download-icon" />
+      <span>Download Now</span>
+    </button>
+  );
+
   return (
     <section className="hero-section">
-      <div className="hero-content">
-        <div className="title-container">
-          <h1 className="main-title">MIMO - Web3.0 Social Platform</h1>
-          <p className="subtitle">Creating a world without borders</p>
-        </div>
-        
-        <button className="download-btn">
-          <svg className="download-icon" width="20" height="20" viewBox="0 0 21 20" fill="none">
-            <path d="M3 10.0035V17.5H18V10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M14.25 9.5835L10.5 13.3335L6.75 9.5835" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M10.4966 2.5V13.3333" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          <span>Download Now</span>
-        </button>
+      <div 
+        className="hero-content"
+        style={{ animation: ANIMATIONS.FADE_IN_UP }}
+      >
+        {renderTitle()}
+        {renderDownloadButton()}
       </div>
     </section>
   );
