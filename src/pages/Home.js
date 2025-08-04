@@ -16,7 +16,7 @@ const Home = () => {
       <header className="main-header">
         <div className="header-container">
           <div className="logo-section">
-            <img src="/api/placeholder/150/38" alt="MIMO Logo" className="logo" />
+            <img src="https://via.placeholder.com/150x38/43FFBB/000000?text=MIMO" alt="MIMO Logo" className="logo" />
           </div>
           
           <nav className="main-nav">
