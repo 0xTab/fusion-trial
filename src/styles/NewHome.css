@@ -363,9 +363,9 @@
 /* Platform Buttons */
 .platform-buttons {
   display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 80px;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
@@ -376,12 +376,13 @@
   justify-content: center;
   width: 91px;
   height: 89px;
-  padding: 12px;
+  padding: 12px 32px;
   border-radius: 8px;
   background: linear-gradient(90deg, rgba(33, 223, 132, 0.20) 0%, rgba(20, 42, 167, 0.20) 48.44%, rgba(9, 114, 173, 0.20) 100%);
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
+  gap: -1px;
 }
 
 .platform-button:hover {
@@ -398,14 +399,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
+  padding: 2.667px 5.333px 4px 5.333px;
+  margin-bottom: 5px;
 }
 
 .platform-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: -1px;
+  margin-bottom: 5px;
 }
 
 .platform-get {
@@ -413,14 +416,16 @@
   font-size: 8px;
   color: var(--text-white);
   opacity: 0.6;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .platform-name {
   font-family: 'PingFang SC', sans-serif;
   font-size: 13px;
   color: var(--text-white);
-  font-weight: 400;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .platform-version {
@@ -428,9 +433,10 @@
   font-size: 5px;
   color: white;
   opacity: 0.8;
-  margin-top: 4px;
   text-align: center;
   width: 45px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Section Styling */
