@@ -183,7 +183,8 @@
 .hero-section {
   position: relative;
   z-index: 10;
-  padding: 50px 0 100px;
+  padding: 20px 0 60px;
+  min-height: 80vh;
 }
 
 .hero-container {
@@ -192,8 +193,9 @@
   padding: 0 90px;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 100px;
-  align-items: center;
+  gap: 200px;
+  align-items: start;
+  padding-top: 100px;
 }
 
 .hero-content {
