@@ -5,12 +5,12 @@ const Header = () => {
   return (
     <header className="home-header">
       <div className="header-content">
-        <div className="back-to-home">
+        <a href="/home" className="back-to-home">
           <svg className="back-icon" width="30" height="30" viewBox="0 0 30 30" fill="none">
             <path d="M15 5L7.5 12.5L15 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           <span>Back to home</span>
-        </div>
+        </a>
         
         <div className="logo">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
