@@ -1,6 +1,6 @@
 import React from 'react';
 import { useResponsive } from '../../hooks/useResponsive';
-import { COLORS, GRADIENTS, TRANSITIONS } from '../../constants/designTokens';
+import { COLORS, TRANSITIONS } from '../../constants/designTokens';
 import '../../styles/components/Footer.css';
 
 const Footer = () => {
@@ -113,7 +113,7 @@ const Footer = () => {
   return (
     <footer 
       className="home-footer"
-      style={{ backgroundColor: COLORS.PRIMARY.FOOTER_BG }}
+      style={{ backgroundColor: COLORS.PRIMARY_OBJECT.FOOTER_BG }}
     >
       <div className="footer-content">
         {renderLogo()}
