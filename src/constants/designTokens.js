@@ -7,16 +7,6 @@ export const COLORS = {
     FOOTER_BG: '#090A11',
     COPYRIGHT_TEXT: '#84899A',
   },
-  GRADIENTS: {
-    BUTTON: 'linear-gradient(90deg, #5AEFA7 4.74%, rgba(217, 217, 217, 0.50) 96.75%)',
-    PLATFORM: 'linear-gradient(180deg, rgba(45, 175, 152, 0.51) 0%, rgba(200, 200, 200, 0.00) 100%)',
-    LOGO: 'linear-gradient(0deg, #5AEFA7, #42EBAE)',
-  },
-  BLUR: {
-    TEAL: 'rgba(92, 242, 215, 0.6)',
-    GREEN: 'rgba(66, 235, 174, 0.5)',
-    BLUE: 'rgba(49, 218, 241, 0.06)',
-  },
   SOCIAL: {
     TWITTER: '#359EFF',
     INSTAGRAM: '#F85471',
@@ -24,6 +14,18 @@ export const COLORS = {
     DISCORD: '#6850FF',
     GITHUB: '#363636',
   },
+};
+
+export const GRADIENTS = {
+  BUTTON: 'linear-gradient(90deg, #5AEFA7 4.74%, rgba(217, 217, 217, 0.50) 96.75%)',
+  PLATFORM: 'linear-gradient(180deg, rgba(45, 175, 152, 0.51) 0%, rgba(200, 200, 200, 0.00) 100%)',
+  LOGO: 'linear-gradient(0deg, #5AEFA7, #42EBAE)',
+};
+
+export const BLUR = {
+  TEAL: 'rgba(92, 242, 215, 0.6)',
+  GREEN: 'rgba(66, 235, 174, 0.5)',
+  BLUE: 'rgba(49, 218, 241, 0.06)',
 };
 
 export const FONTS = {
