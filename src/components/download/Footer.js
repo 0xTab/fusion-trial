@@ -1,6 +1,6 @@
 import React from 'react';
 import { useResponsive } from '../../hooks/useResponsive';
-import { COLORS, TRANSITIONS } from '../../constants/designTokens';
+import { TRANSITIONS } from '../../constants/designTokens';
 import '../../styles/components/Footer.css';
 
 const Footer = () => {

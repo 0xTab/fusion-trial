@@ -1,7 +1,7 @@
 import React from 'react';
 import { BackIcon } from '../common/SvgIcons';
 import { useResponsive } from '../../hooks/useResponsive';
-import { SPACING, FONTS } from '../../constants/designTokens';
+// Design tokens available if needed
 import '../../styles/components/Header.css';
 
 const Header = () => {

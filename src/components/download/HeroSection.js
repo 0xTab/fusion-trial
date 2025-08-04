@@ -1,7 +1,7 @@
 import React from 'react';
 import { DownloadIcon } from '../common/SvgIcons';
 import { useResponsive } from '../../hooks/useResponsive';
-import { COLORS, GRADIENTS, SHADOWS, TRANSITIONS, ANIMATIONS } from '../../constants/designTokens';
+import { GRADIENTS, SHADOWS, TRANSITIONS, ANIMATIONS } from '../../constants/designTokens';
 import '../../styles/components/HeroSection.css';
 
 const HeroSection = () => {
