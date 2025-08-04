@@ -155,7 +155,7 @@ const Home = () => {
             </div>
             <h3>Send Chat</h3>
             <div className="card-image">
-              <img src="/api/placeholder/270/556" alt="Send Chat" />
+              <img src="https://via.placeholder.com/270x556/131313/43FFBB?text=Send+Chat" alt="Send Chat" />
             </div>
           </div>
 
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
             <h3>Discover</h3>
             <div className="card-image">
-              <img src="/api/placeholder/270/575" alt="Discover" />
+              <img src="https://via.placeholder.com/270x575/131313/FFFFFF?text=Discover" alt="Discover" />
             </div>
           </div>
 
@@ -180,7 +180,7 @@ const Home = () => {
             </div>
             <h3>Club</h3>
             <div className="card-image">
-              <img src="/api/placeholder/270/574" alt="Club" />
+              <img src="https://via.placeholder.com/270x574/43FFBB/000000?text=Club" alt="Club" />
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ const Home = () => {
             </p>
           </div>
           <div className="wallet-image">
-            <img src="/api/placeholder/718/829" alt="Web3.0 Wallet" />
+            <img src="https://via.placeholder.com/718x829/42EBAE/000000?text=Web3.0+Wallet" alt="Web3.0 Wallet" />
           </div>
         </div>
       </section>
@@ -208,7 +208,7 @@ const Home = () => {
           One-stop-shop Decentralized Identity (DID) solution that conveniently stores all of your Web3.0 information.
         </p>
         <div className="profile-image">
-          <img src="/api/placeholder/846/951" alt="Web3.0 Profile" />
+          <img src="https://via.placeholder.com/846x951/42EBAE/000000?text=Web3.0+Profile" alt="Web3.0 Profile" />
         </div>
       </section>
 
@@ -222,7 +222,7 @@ const Home = () => {
             </p>
           </div>
           <div className="news-image">
-            <img src="/api/placeholder/622/788" alt="News and Updates" />
+            <img src="https://via.placeholder.com/622x788/000000/FFFFFF?text=News+Updates" alt="News and Updates" />
           </div>
         </div>
       </section>
@@ -234,7 +234,7 @@ const Home = () => {
           Join us now to get a free NFT avatar instantly.
         </p>
         <div className="nft-image">
-          <img src="/api/placeholder/753/865" alt="Free NFT Avatar" />
+          <img src="https://via.placeholder.com/753x865/42EBAE/000000?text=Free+NFT+Avatar" alt="Free NFT Avatar" />
         </div>
       </section>
 
@@ -248,21 +248,21 @@ const Home = () => {
             </p>
           </div>
           <div className="about-image">
-            <img src="/api/placeholder/627/420" alt="About Us" />
+            <img src="https://via.placeholder.com/627x420/000000/FFFFFF?text=About+Us" alt="About Us" />
           </div>
         </div>
       </section>
 
       {/* Contact Us Section */}
       <section className="contact-section">
-        <img src="/api/placeholder/1920/1039" alt="Contact Us" className="contact-image" />
+        <img src="https://via.placeholder.com/1920x1039/43FFBB/000000?text=Contact+Us" alt="Contact Us" className="contact-image" />
       </section>
 
       {/* Footer */}
       <footer className="main-footer">
         <div className="footer-container">
           <div className="footer-logo">
-            <img src="/api/placeholder/150/38" alt="MIMO Logo" />
+            <img src="https://via.placeholder.com/150x38/43FFBB/000000?text=MIMO" alt="MIMO Logo" />
           </div>
           <div className="footer-social">
             <div className="footer-social-icon twitter">
