@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MyButton from './components/common/Mybutton';
+import { Builder } from '@builder.io/react';
+
+Builder.registerComponent(MyButton, {
+  name: 'MyButton',
+  inputs: [
+    { name: 'text', type: 'text' },
+    { name: 'variant', type: 'text' }
+    ],
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
