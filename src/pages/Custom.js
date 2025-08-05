@@ -1,18 +1,32 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import { BuilderComponent, builder } from '@builder.io/react';
+import { BuilderComponent, builder, useIsPreviewing } from '@builder.io/react';
 
 function Custom() {
+  const isPreviewingInBuilder = useIsPreviewing();
+  const [notFound, setNotFound] = useState(false);
   const [content, setContent] = useState(null);
 
-  // 获取 Builder.io 内容
-  useEffect(() => {
-    builder
-      .get('page', { url: '/components' }) // 使用 page 模型或自定义模型
-      .promise()
-      .then((response) => setContent(response))
-      .catch((error) => console.error('Error fetching Builder content:', error));
-  }, []);
+  // get the page content from Builder
+   useEffect(() => {
+    async function fetchContent() {
+      const content = await builder
+        .get("page", {
+          url: window.location.pathname
+        })
+        .promise();
+
+      setContent(content);
+      setNotFound(!content);
+
+      // if the page title is found, 
+      // set the document title
+      if (content?.data.title) {
+       document.title = content.data.title
+      }
+    }
+    fetchContent();
+  }, [window.location.pathname]);
 
   return (
     <div style={{ padding: '20px' }}>
