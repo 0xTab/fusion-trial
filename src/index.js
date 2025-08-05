@@ -3,16 +3,34 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyButton from './components/common/Mybutton';
 import { Builder } from '@builder.io/react';
+import MyButton from './components/common/Mybutton';
+
+Builder.init('1a19d785dcd548d6a427a21d0619697b');
 
 Builder.registerComponent(MyButton, {
-  name: 'MyButton',
-  inputs: [
-    { name: 'text', type: 'text' },
-    { name: 'variant', type: 'text' }
+    name: 'MyButton',
+    inputs: [
+        {
+            name: 'text',
+            type: 'string',
+            defaultValue: 'Click Me',
+            required: true,
+        },
+        {
+            name: 'variant',
+            type: 'string',
+            enum: ['primary', 'secondary'],
+            defaultValue: 'primary',
+        },
     ],
-});
+    defaultStyles: {
+        padding: '10px 20px',
+        borderRadius: '4px',
+    },
+    noWrap: true, // 避免被 div 包裹
+    hideFromInsertMenu: false, // 显示在 Insert 菜单
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
