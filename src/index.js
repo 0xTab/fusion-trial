@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Builder } from '@builder.io/react';
 import MyButton from './components/common/Mybutton';
 
-Builder.init('1a19d785dcd548d6a427a21d0619697b');
+// Builder.init('1a19d785dcd548d6a427a21d0619697b');
+console.log("builder", Builder)
 
 Builder.registerComponent(MyButton, {
     name: 'MyButton',
