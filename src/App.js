@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import TestMCP from './pages/testmcp';
-import Custom from './pages/Custom';
-import EarlyAccess from './pages/EarlyAccess';
+import Customize from './pages/Customize';
 import './App.css';
 
 function App() {
@@ -12,12 +11,11 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Navigate to="/early-access" replace />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/testmcp" element={<TestMCP />} />
-          <Route path="/custom" element={<Custom />} />
-          <Route path="/early-access" element={<EarlyAccess />} />
+          <Route path="/Customize" element={<Customize />} />
         </Routes>
       </div>
     </Router>

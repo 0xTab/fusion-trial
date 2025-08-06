@@ -12,11 +12,13 @@ function Custom() {
     async function fetchContent() {
       const content = await builder
         .get("page", {
-          url: window.location.pathname
+          url: '/custom'
         })
         .promise();
+        console.log("content", content)
 
       setContent(content);
+      console.log("content", content)
       setNotFound(!content);
 
       // if the page title is found, 

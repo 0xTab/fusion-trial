@@ -30,6 +30,7 @@ Builder.registerComponent(MyButton, {
     },
     noWrap: true, // 避免被 div 包裹
     hideFromInsertMenu: false, // 显示在 Insert 菜单
+    preview: true,
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
