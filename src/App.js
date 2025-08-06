@@ -12,11 +12,12 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/" element={<Navigate to="/early-access" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/testmcp" element={<TestMCP />} />
           <Route path="/custom" element={<Custom />} />
+          <Route path="/early-access" element={<EarlyAccess />} />
         </Routes>
       </div>
     </Router>
