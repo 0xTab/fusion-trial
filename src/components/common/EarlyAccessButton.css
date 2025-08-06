@@ -1,0 +1,89 @@
+.early-access-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 635px;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #090A11;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(66, 235, 174, 0.3);
+}
+
+.early-access-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(66, 235, 174, 0.4);
+}
+
+.early-access-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 25px rgba(66, 235, 174, 0.3);
+}
+
+.early-access-btn__text {
+  line-height: normal;
+}
+
+.early-access-btn__icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #090A11;
+}
+
+/* Gradient Variants */
+.early-access-btn--primary {
+  background: linear-gradient(83deg, #01E47B -10.08%, #03C3F0 96.91%);
+}
+
+.early-access-btn--cyan {
+  background: linear-gradient(83deg, #01E47B -10.08%, #03C3F0 96.91%);
+}
+
+.early-access-btn--red {
+  background: linear-gradient(83deg, #01E47B -10.08%, #E4011B -10.07%);
+}
+
+.early-access-btn--blue {
+  background: linear-gradient(83deg, #01E47B -10.08%, #0176E4 -10.07%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .early-access-btn {
+    max-width: 100%;
+    padding: 12px 32px;
+    font-size: 24px;
+  }
+  
+  .early-access-btn__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .early-access-btn {
+    padding: 10px 24px;
+    font-size: 20px;
+  }
+  
+  .early-access-btn__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .early-access-btn {
+    max-width: 635px;
+  }
+}
