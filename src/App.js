@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import TestMCP from './pages/testmcp';
 import Custom from './pages/Custom';
+import EarlyAccess from './pages/EarlyAccess';
 import './App.css';
 
 function App() {
