@@ -1,0 +1,373 @@
+.testcom-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E8FFF4 0%, #F0FFF7 50%, #E8FFF4 100%);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.testcom-main {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+.hero-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+.mimo-logo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mimo-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.hero-title {
+  margin: 0 0 3rem 0;
+  line-height: 1.1;
+}
+
+.mimo-text {
+  display: block;
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: #00E5A0;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 400;
+  color: #333;
+  letter-spacing: -0.02em;
+}
+
+.cta-section {
+  position: relative;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-early-access-btn {
+  background: linear-gradient(83deg, #01E47B -10.08%, #03C3F0 96.91%);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #090A11;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.get-early-access-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(1, 228, 123, 0.3);
+}
+
+.sparkle-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.top-sparkle {
+  top: -20px;
+  right: 20%;
+}
+
+.bottom-sparkle {
+  bottom: 20px;
+  left: 15%;
+}
+
+.visualization-container {
+  position: relative;
+  height: 500px;
+  margin-top: 2rem;
+}
+
+.avatars-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #00E5A0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(45deg, #00E5A0, #03C3F0);
+}
+
+.avatar-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.avatar-2 {
+  top: 5%;
+  right: 20%;
+  animation-delay: 0.5s;
+}
+
+.avatar-3 {
+  top: 40%;
+  left: 5%;
+  animation-delay: 1s;
+}
+
+.avatar-4 {
+  top: 60%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+.avatar-5 {
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.avatar-6 {
+  bottom: 15%;
+  right: 25%;
+  animation-delay: 2.5s;
+}
+
+.central-sphere {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+}
+
+.sphere-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(0, 229, 160, 0.1) 0%, rgba(0, 229, 160, 0.05) 50%, transparent 70%);
+  border: 2px solid rgba(0, 229, 160, 0.3);
+}
+
+.grid-pattern {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 229, 160, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(3, 195, 240, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px, 30px 30px;
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+.orbit-lines {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  border: 1px solid rgba(0, 229, 160, 0.2);
+  border-radius: 50%;
+  animation: rotate 30s linear infinite reverse;
+}
+
+.orbit-lines::before,
+.orbit-lines::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(3, 195, 240, 0.15);
+  border-radius: 50%;
+}
+
+.orbit-lines::before {
+  width: 120%;
+  height: 120%;
+}
+
+.orbit-lines::after {
+  width: 80%;
+  height: 80%;
+}
+
+.mimo-center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.device-mockup {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.phone-frame {
+  width: 280px;
+  height: 140px;
+  background: linear-gradient(135deg, #2A2A2A 0%, #1A1A1A 100%);
+  border-radius: 25px;
+  padding: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #E8FFF4 0%, #F0FFF7 100%);
+  border-radius: 17px;
+  position: relative;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testcom-main {
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+  }
+  
+  .hero-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .mimo-text {
+    font-size: clamp(3rem, 15vw, 6rem);
+  }
+  
+  .subtitle {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+  
+  .get-early-access-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .visualization-container {
+    height: 400px;
+  }
+  
+  .central-sphere {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .mimo-center-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .phone-frame {
+    width: 200px;
+    height: 100px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mimo-text {
+    font-size: clamp(2.5rem, 18vw, 5rem);
+  }
+  
+  .subtitle {
+    font-size: clamp(1.2rem, 10vw, 2.5rem);
+  }
+  
+  .get-early-access-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .visualization-container {
+    height: 300px;
+  }
+  
+  .central-sphere {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .mimo-center-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .phone-frame {
+    width: 160px;
+    height: 80px;
+  }
+  
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}
