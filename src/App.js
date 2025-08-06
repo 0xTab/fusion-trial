@@ -5,6 +5,7 @@ import TestFlight from './pages/TestFlight';
 import TestMCP from './pages/testmcp';
 import TestCom from './pages/TestCom';
 import Customize from './pages/Customize';
+import TestMapping from './pages/TestMapping';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/testmcp" element={<TestMCP />} />
           <Route path="/testcom" element={<TestCom />} />
           <Route path="/Customize" element={<Customize />} />
+          <Route path="/testmapping" element={<TestMapping />} />
         </Routes>
       </div>
     </Router>
