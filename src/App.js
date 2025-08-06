@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import TestMCP from './pages/testmcp';
+import TestCom from './pages/TestCom';
 import Customize from './pages/Customize';
 import './App.css';
 
