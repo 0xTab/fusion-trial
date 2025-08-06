@@ -16,6 +16,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/testmcp" element={<TestMCP />} />
+          <Route path="/testcom" element={<TestCom />} />
           <Route path="/Customize" element={<Customize />} />
         </Routes>
       </div>
