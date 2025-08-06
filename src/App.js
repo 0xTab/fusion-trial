@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import TestMCP from './pages/testmcp';
+import TestCom from './pages/TestCom';
 import Customize from './pages/Customize';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/testmcp" element={<TestMCP />} />
+          <Route path="/testcom" element={<TestCom />} />
           <Route path="/Customize" element={<Customize />} />
         </Routes>
       </div>
