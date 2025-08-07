@@ -2,6 +2,7 @@ import React from 'react';
 import FigmaButton from '../components/common/FigmaButton';
 import { useFigmaProcessor, getDefaultFigmaData } from '../hooks/useFigmaProcessor';
 import '../styles/TestMapping.css';
+import { componentMapping } from '../utils/figmaProcessor';
 
 const TestMapping = () => {
   const { components: figmaComponents, loading, error } = useFigmaProcessor(getDefaultFigmaData());
