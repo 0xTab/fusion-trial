@@ -1,0 +1,1088 @@
+/* BuilderHome Main Styles */
+.builder-home {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+.builderhome-header {
+  position: relative;
+  z-index: 100;
+  padding: 20px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo .logo-image {
+  height: 60px;
+  width: auto;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.language-text {
+  font-family: 'Outfit', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.language-dropdown {
+  transition: transform 0.3s ease;
+}
+
+.language-selector:hover .language-dropdown {
+  transform: rotate(180deg);
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-lines span {
+  width: 24px;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.hero-looper {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  transform: rotate(-30deg);
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: rotate(-30deg) translateY(0px); }
+  50% { transform: rotate(-30deg) translateY(-20px); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  margin: 0 0 40px 0;
+  line-height: 1.1;
+}
+
+.mimo-title {
+  display: block;
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  color: #43FFBB;
+  margin-bottom: 20px;
+}
+
+.platform-text {
+  display: block;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.web3-text {
+  display: block;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  background: linear-gradient(90deg, #01E47B 2.36%, #03C3F0 142.54%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 50px 0;
+  max-width: 628px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta-button {
+  background: linear-gradient(83deg, #01E47B -10.08%, #03C3F0 96.91%) !important;
+  color: #090A11 !important;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  padding: 16px 48px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(1, 228, 123, 0.3);
+}
+
+.hero-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(1, 228, 123, 0.4);
+}
+
+/* Web3 Community Section */
+.web3-community {
+  padding: 100px 0;
+  background: #000;
+  position: relative;
+}
+
+.community-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.community-title {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: white;
+  margin: 0 0 60px 0;
+  line-height: 1.2;
+}
+
+.community-phone {
+  margin: 0 auto 40px auto;
+  max-width: 400px;
+}
+
+.phone-frame {
+  background: #43FFBB;
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-content {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-interface {
+  margin-bottom: 20px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.user-avatar .avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #43FFBB;
+}
+
+.chat-bubbles {
+  flex: 1;
+}
+
+.chat-bubble {
+  background: #f0f0f0;
+  border-radius: 16px;
+  padding: 12px 16px;
+  display: inline-block;
+}
+
+.dots {
+  display: flex;
+  gap: 4px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #666;
+  animation: typing 1.4s infinite;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% { opacity: 0.3; }
+  30% { opacity: 1; }
+}
+
+.club-label {
+  font-size: 40px;
+  color: #090A11;
+  font-weight: 600;
+}
+
+.community-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #42EBAE;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #42EBAE;
+}
+
+/* Web3 Wallet Section */
+.web3-wallet {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.wallet-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.wallet-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wallet-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #090A11 0%, rgba(9, 10, 17, 0.00) 23.44%, rgba(9, 10, 17, 0.00) 81.77%, #090A11 100%);
+  mix-blend-mode: multiply;
+}
+
+.wallet-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.wallet-phone {
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+}
+
+.wallet-phone-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.wallet-text {
+  margin-bottom: 60px;
+}
+
+.wallet-title {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.wallet-description {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.crypto-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.crypto-icon {
+  transition: transform 0.3s ease;
+}
+
+.crypto-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Web3 Profile Section */
+.web3-profile {
+  padding: 100px 0;
+  background: #000;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.profile-description {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+.profile-phone {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-phone-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* News and Updates Section */
+.news-updates {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.news-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.news-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.news-title {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.news-description {
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: white;
+  max-width: 639px;
+  margin: 0 auto 60px auto;
+  line-height: 1.4;
+}
+
+.news-phone {
+  max-width: 500px;
+  margin: 0 auto;
+  transform: rotate(-13.503deg);
+}
+
+.news-phone-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star-element {
+  position: absolute;
+  animation: floatStar 6s ease-in-out infinite;
+}
+
+.star-1 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  top: 70%;
+  right: 20%;
+  animation-delay: 3s;
+}
+
+@keyframes floatStar {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(180deg); }
+}
+
+/* Free NFT Avatar Section */
+.free-nft-avatar {
+  padding: 100px 0;
+  background: #000;
+}
+
+.nft-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.nft-title {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.nft-description {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+.nft-phone {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nft-phone-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 100px 0;
+  background: #000;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.about-description {
+  font-size: 35px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 627px;
+  margin: 0 auto 60px auto;
+  line-height: 1.4;
+}
+
+.about-image {
+  max-width: 627px;
+  margin: 0 auto;
+}
+
+.about-illustration {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-button {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.nav-prev {
+  transform: rotate(-90deg);
+}
+
+.nav-next {
+  transform: rotate(90deg);
+}
+
+.contact-phone {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.qr-code {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+/* Footer */
+.builderhome-footer {
+  background: #000;
+  padding: 60px 0 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo-image {
+  height: 50px;
+  width: auto;
+}
+
+.footer-mimo-text {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.scroll-to-top {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid #43FFBB;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: #43FFBB;
+  transform: translateY(-2px);
+}
+
+.scroll-to-top:hover svg path {
+  fill: #000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-copyright {
+  color: #84899A;
+  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-link {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.twitter .social-icon {
+  background: #359EFF;
+}
+
+.instagram .social-icon {
+  background: #F85471;
+}
+
+.facebook .social-icon {
+  background: #5372FF;
+}
+
+.discord .social-icon {
+  background: #6850FF;
+}
+
+.medium .social-icon {
+  background: #363636;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mimo-title {
+    font-size: 60px;
+  }
+  
+  .platform-text,
+  .web3-text {
+    font-size: 50px;
+  }
+  
+  .community-title,
+  .wallet-title,
+  .profile-title,
+  .news-title,
+  .nft-title,
+  .about-title {
+    font-size: 50px;
+  }
+  
+  .news-description,
+  .about-description {
+    font-size: 28px;
+  }
+  
+  .hero-cta-button {
+    font-size: 24px !important;
+    padding: 14px 36px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 16px;
+  }
+  
+  .header-nav {
+    gap: 20px;
+  }
+  
+  .language-text {
+    font-size: 16px;
+  }
+  
+  .hero-content {
+    padding: 0 16px;
+  }
+  
+  .mimo-title {
+    font-size: 48px;
+  }
+  
+  .platform-text,
+  .web3-text {
+    font-size: 36px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+  }
+  
+  .hero-cta-button {
+    font-size: 20px !important;
+    padding: 12px 32px !important;
+  }
+  
+  .community-title,
+  .wallet-title,
+  .profile-title,
+  .news-title,
+  .nft-title,
+  .about-title {
+    font-size: 36px;
+  }
+  
+  .news-description,
+  .about-description {
+    font-size: 24px;
+  }
+  
+  .wallet-description,
+  .profile-description,
+  .nft-description {
+    font-size: 20px;
+  }
+  
+  .crypto-icons {
+    gap: 20px;
+  }
+  
+  .crypto-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .contact-navigation {
+    gap: 20px;
+  }
+  
+  .qr-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .footer-mimo-text {
+    font-size: 40px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .social-links {
+    gap: 12px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+  
+  .mimo-title {
+    font-size: 36px;
+  }
+  
+  .platform-text,
+  .web3-text {
+    font-size: 28px;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+  }
+  
+  .hero-cta-button {
+    font-size: 18px !important;
+    padding: 10px 28px !important;
+  }
+  
+  .community-title,
+  .wallet-title,
+  .profile-title,
+  .news-title,
+  .nft-title,
+  .about-title {
+    font-size: 28px;
+  }
+  
+  .news-description,
+  .about-description {
+    font-size: 20px;
+  }
+  
+  .wallet-description,
+  .profile-description,
+  .nft-description {
+    font-size: 18px;
+  }
+  
+  .phone-frame {
+    padding: 20px;
+  }
+  
+  .phone-content {
+    padding: 20px 10px;
+    min-height: 200px;
+  }
+  
+  .club-label {
+    font-size: 28px;
+  }
+  
+  .crypto-icons {
+    gap: 15px;
+  }
+  
+  .crypto-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .qr-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .footer-mimo-text {
+    font-size: 32px;
+  }
+  
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Additional utility classes */
+.section-padding {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #43FFBB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3AE6A8;
+}
