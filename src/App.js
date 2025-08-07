@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import Customize from './pages/Customize';
 import TestMapping from './pages/TestMapping';
+import BuilderHome from './pages/BuilderHome';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/Customize" element={<Customize />} />
           <Route path="/testmapping" element={<TestMapping />} />
+          <Route path="/builderhome" element={<BuilderHome />} />
         </Routes>
       </div>
     </Router>
