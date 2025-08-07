@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { builder, Builder } from '@builder.io/react';
-import MyButton from './components/common/Mybutton';
+import FigmaButton from './components/common/FigmaButton';
 
 builder.init('1a19d785dcd548d6a427a21d0619697b');
 
-Builder.registerComponent(MyButton, {
-    name: 'MyButton',
+Builder.registerComponent(FigmaButton, {
+    name: 'FigmaButton',
     inputs: [
         {
             name: 'text',

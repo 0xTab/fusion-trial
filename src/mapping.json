@@ -1,0 +1,8 @@
+{
+    "components": {
+        "MyButton": {
+            "name": "FigmaButton",
+            "path": "src/components/common/FigmaButton.jsx"
+        }
+    }
+}
