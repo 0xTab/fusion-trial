@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import TestFlight from './pages/TestFlight';
 import Customize from './pages/Customize';
 import TestMapping from './pages/TestMapping';
+import BuilderHome from './pages/BuilderHome';
 import './App.css';
 
 function App() {
