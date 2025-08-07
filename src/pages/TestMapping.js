@@ -1,135 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FigmaButton from '../components/common/FigmaButton';
+import { useFigmaProcessor, getDefaultFigmaData } from '../hooks/useFigmaProcessor';
 import '../styles/TestMapping.css';
 
 const TestMapping = () => {
-  const [figmaComponents, setFigmaComponents] = useState([]);
-
-  // 简化的组件映射配置
-  const componentMapping = {
-    "MyButton": "FigmaButton"
-  };
-
-  useEffect(() => {
-    // 模拟从 Figma 获取的设计数据
-    const figmaDesignData = {
-      nodes: [
-        {
-          id: '1228:640',
-          name: 'MyButton',
-          type: 'FRAME',
-          children: [
-            {
-              id: '1228:641',
-              name: 'Get Early Acces',
-              type: 'TEXT',
-              text: 'Get Early Acces',
-              fills: [
-                {
-                  type: 'GRADIENT_LINEAR',
-                  gradientStops: [
-                    { color: { hex: '#01E47B' } },
-                    { color: { hex: '#03C3F0' } }
-                  ]
-                }
-              ]
-            }
-          ],
-          layout: {
-            dimensions: {
-              width: 661.05,
-              height: 59.2
-            }
-          }
-        }
-      ]
-    };
-
-    // 处理 Figma 设计数据，查找匹配的组件
-    const findMatchingComponents = (nodes) => {
-      const matches = [];
-      
-      const searchNodes = (nodeList) => {
-        if (!Array.isArray(nodeList)) return;
-        
-        nodeList.forEach(node => {
-          // 检查是否有匹配的组件名称
-          if (node.name && componentMapping[node.name]) {
-            const reactComponent = componentMapping[node.name];
-            const props = extractComponentProps(node);
-            
-            matches.push({
-              figmaName: node.name,
-              reactComponent: reactComponent,
-              nodeId: node.id,
-              props: props
-            });
-          }
-          
-          // 递归搜索子节点
-          if (node.children) {
-            searchNodes(node.children);
-          }
-        });
-      };
-
-      searchNodes(nodes);
-      return matches;
-    };
-
-    // 提取组件属性
-    const extractComponentProps = (node) => {
-      const props = {
-        variant: 'primary',
-        size: 'medium',
-        withIcon: false,
-        disabled: false,
-        className: '',
-        children: 'Get Early Access'
-      };
-
-      // 提取文本内容
-      if (node.children) {
-        const textNode = node.children.find(child => child.type === 'TEXT');
-        if (textNode && textNode.text) {
-          props.children = textNode.text;
-        }
-      }
-
-      // 根据尺寸判断大小
-      if (node.layout && node.layout.dimensions) {
-        const { width, height } = node.layout.dimensions;
-        if (width && height) {
-          if (width < 200 && height < 50) {
-            props.size = 'small';
-          } else if (width > 300 || height > 80) {
-            props.size = 'large';
-          }
-        }
-      }
-
-      // 检查是否有图标
-      if (node.children) {
-        const hasIcon = node.children.some(child => 
-          child.type === 'IMAGE-SVG' || 
-          (child.name && child.name.toLowerCase().includes('icon'))
-        );
-        props.withIcon = hasIcon;
-      }
-
-      return props;
-    };
-
-    const components = findMatchingComponents(figmaDesignData.nodes);
-    setFigmaComponents(components);
-  }, []);
+  const { components: figmaComponents, loading, error } = useFigmaProcessor(getDefaultFigmaData());
 
   const handleButtonClick = (figmaName) => {
     console.log(`${figmaName} clicked!`);
   };
 
   const renderComponent = (component) => {
-    const { figmaName, reactComponent, props } = component;
+    const { figmaName, reactComponent, props, styles } = component;
     
     switch (reactComponent) {
       case 'FigmaButton':
@@ -141,6 +23,7 @@ const TestMapping = () => {
             withIcon={props.withIcon}
             disabled={props.disabled}
             className={props.className}
+            style={styles}
             onClick={() => handleButtonClick(figmaName)}
           >
             {props.children}
@@ -150,6 +33,27 @@ const TestMapping = () => {
         return <div>Unknown component: {reactComponent}</div>;
     }
   };
+
+  if (loading) {
+    return (
+      <div className="test-mapping">
+        <div className="test-mapping__container">
+          <h1 className="test-mapping__title">Loading...</h1>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="test-mapping">
+        <div className="test-mapping__container">
+          <h1 className="test-mapping__title">Error</h1>
+          <p className="test-mapping__subtitle">{error}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="test-mapping">
@@ -234,6 +138,8 @@ const TestMapping = () => {
                     <div className="test-mapping__component-properties">
                       <h5>Props:</h5>
                       <pre>{JSON.stringify(component.props, null, 2)}</pre>
+                      <h5>Styles:</h5>
+                      <pre>{JSON.stringify(component.styles, null, 2)}</pre>
                     </div>
                   </div>
                 ))}
