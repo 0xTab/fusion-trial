@@ -133,6 +133,18 @@
   transform: translateY(-2px);
 }
 
+.figma-button--gradient {
+  background: linear-gradient(135deg, #01E47B 0%, #03C3F0 100%);
+  color: #090A11;
+  box-shadow: 0 4px 15px rgba(1, 228, 123, 0.3);
+}
+
+.figma-button--gradient:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00D170 0%, #02B0D6 100%);
+  box-shadow: 0 6px 20px rgba(1, 228, 123, 0.4);
+  transform: translateY(-2px);
+}
+
 /* Focus states for accessibility */
 .figma-button:focus {
   outline: 2px solid #43FFBB;

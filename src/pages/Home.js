@@ -1,24 +1,24 @@
 import React from 'react';
-import Header from '../components/home/Header';
-import WalletSection from '../components/home/WalletSection';
-import ProfileSection from '../components/home/ProfileSection';
+import HeroSection from '../components/home/HeroSection';
+import Web3WalletSection from '../components/home/Web3WalletSection';
 import NewsSection from '../components/home/NewsSection';
-import AboutSection from '../components/home/AboutSection';
-import ContactSection from '../components/home/ContactSection';
+import CommunitySection from '../components/home/CommunitySection';
+import AboutUsSection from '../components/home/AboutUsSection';
+import ContactUsSection from '../components/home/ContactUsSection';
 import Footer from '../components/home/Footer';
+import Web3ProfileSection from '../components/home/Web3ProfileSection';
 import './Home.css';
-import MainSection from '../components/home/MainSection';
 
 const Home = () => {
   return (
     <div className="home-page">
-      <Header />
-      <MainSection />
-      <WalletSection />
-      <ProfileSection />
+      <HeroSection />
+      <Web3WalletSection />
+      <Web3ProfileSection />
       <NewsSection />
-      <AboutSection />
-      <ContactSection />
+      <CommunitySection />
+      <AboutUsSection />
+      <ContactUsSection />
       <Footer />
     </div>
   );

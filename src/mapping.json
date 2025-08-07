@@ -3,6 +3,10 @@
         "MyButton": {
             "name": "FigmaButton",
             "path": "src/components/common/FigmaButton.jsx"
+        },
+        "MyHead": {
+            "name": "FigmaHead",
+            "path": "src/components/common/FigmaHead.jsx"
         }
     }
 }
