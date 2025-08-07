@@ -17,6 +17,7 @@ function App() {
           <Route path="/testflight" element={<TestFlight />} />
           <Route path="/Customize" element={<Customize />} />
           <Route path="/testmapping" element={<TestMapping />} />
+          <Route path="/builderhome" element={<BuilderHome />} />
         </Routes>
       </div>
     </Router>
