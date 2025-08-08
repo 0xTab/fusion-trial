@@ -1,6 +1,6 @@
 import React from 'react';
 import FigmaHead from '../common/FigmaHead';
-import './Web3ProfileSection.css';
+import '../../styles/home/Web3ProfileSection.css';
 
 const Web3ProfileSection = () => {
   return (

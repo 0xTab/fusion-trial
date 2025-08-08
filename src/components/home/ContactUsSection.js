@@ -1,6 +1,6 @@
 import React from 'react';
 import FigmaButton from '../common/FigmaButton';
-import './ContactUsSection.css';
+import '../../styles/home/ContactUsSection.css';
 
 const ContactUsSection = () => {
   return (

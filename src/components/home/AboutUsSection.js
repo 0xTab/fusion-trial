@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUsSection.css';
+import '../../styles/home/AboutUsSection.css';
 
 const AboutUsSection = () => {
   return (

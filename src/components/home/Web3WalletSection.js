@@ -1,6 +1,6 @@
 import React from 'react';
 import FigmaHead from '../common/FigmaHead';
-import './Web3WalletSection.css';
+import '../../styles/home/Web3WalletSection.css';
 
 const Web3WalletSection = () => {
   return (

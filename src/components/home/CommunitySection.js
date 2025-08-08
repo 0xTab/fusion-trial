@@ -1,5 +1,5 @@
 import React from 'react';
-import './CommunitySection.css';
+import '../../styles/home/CommunitySection.css';
 
 const CommunitySection = () => {
   return (
