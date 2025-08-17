@@ -1,6 +1,6 @@
 import React from 'react';
 import FigmaButton from '../common/FigmaButton';
-import './HeroSection.css';
+import '../../styles/home/HeroSection.css';
 
 const HeroSection = () => {
   return (
@@ -63,4 +63,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection; 
+export default HeroSection;
